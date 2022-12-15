@@ -1,0 +1,39 @@
+SORTING
+1. [22,27,16,2,18,6] -->(22,2)
+
+2. [2,27,16,22,18,6]	-->(27,6)
+
+3. [2,6,16,22,18,27]-->16 sayısının yerinin doğru olduğu görüldü.
+
+4. [2,6,16,18,22,27]-->(22,18)
+ 
+4. [2,6,16,18,22,27]-->22 sayısının yerinin doğru olduğu görüldü. 
+ 
+5. [2,6,16,18,22,27]-->İşlem tamamlandı.
+
+
+BIG O NOTATION
+[22,27,16,2,18,6] n adet işlem var
+	
+[2,27,16,22,18,6] n-1 adet işlem var
+
+[2,6,16,22,18,27] n-2 adet işlem var
+
+[2,6,16,18,22,27] n-3 adet işlem var
+
+(n) + (n-1) + (n-2) + (n-3) +……+1
+n(n+1)/2 => (n2+n)/2 Dominant karakter alınıyor. 
+O(n2) 
+
+
+TIME COMPLEXITY
+Dizi sıralandıktan sonra [2,6,16,18,22,27] halini almaktadır. 
+18 sayısı tam ortada yer aldığı için, average case olduğu görülmektedir. 
+
+SIRALAMA	
+[7,3,5,8,2,9,4,15,6]
+1. [2,3,5,8,7,9,4,15,6]-->(2,7) 	
+2. [2,3,5,8,7,9,4,15,6]-->3 sayısının yerinin doğru olduğu görüldü.
+3. [2,3,4,8,7,9,5,15,6]-->(4,5)
+4. [2,3,4,5,7,9,8,15,6]-->(5,8)
+
